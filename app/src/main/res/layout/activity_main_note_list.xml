@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="#3494B2BF"
+    tools:context=".MainActivityNoteList">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="#80A4C0"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtNoteView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Tekstiä..."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="53dp" />
+
+        <TextView
+            android:id="@+id/txtNoteEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="#D2DDE6"
+            android:inputType="text"
+            android:text="Tekstiä..."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtNoteAmount"
+            android:layout_width="74dp"
+            android:layout_height="37dp"
+            android:background="#D1DCE5"
+            android:inputType="text"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="112dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/imageViewRemove"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#673AB7"
+            android:clickable="false"
+            android:minHeight="50dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewEdit"
+            app:srcCompat="@drawable/removebtn"
+            tools:layout_editor_absoluteY="53dp"
+            tools:srcCompat="@drawable/removebtn" />
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#E91E63"
+            android:clickable="false"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="parent"
+            app:srcCompat="@drawable/editbtn"
+            tools:layout_editor_absoluteY="107dp"
+            tools:srcCompat="@drawable/editbtn" />
+
+    </LinearLayout>
+
+</LinearLayout>
